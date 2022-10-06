@@ -61,8 +61,10 @@
 }
 .projects p {
      margin-bottom: 1%;
+     text-align: center;
      color: grey;
-     font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+     font-size: 20px;
 }
  .column {
      float: left;
