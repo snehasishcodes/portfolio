@@ -5,7 +5,7 @@
      box-sizing: border-box;
 }
  body {
-     background: linear-gradient(90deg, #104d73, #102e73);
+     background: linear-gradient(90deg, #44bd9a, #44a7bd);
      overflow: auto;
 }
  .main {
@@ -52,12 +52,17 @@
  .projects{
      margin: 2%;
 }
- .projects h2{
-     margin: 5%;
+ .projects h2 {
+     margin-top: 5%;
      text-align: center;
-     color: #4747ff;
-     font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
      font-size: 25px;
+}
+.projects p {
+     margin-bottom: 1%;
+     color: grey;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
 }
  .column {
      float: left;
@@ -80,12 +85,12 @@
      border: 2px solid #c7c7c7;
      border-radius: 10px;
 }
- .card h2{
+ .card h2 {
      color: white;
      font-family: Arial, Helvetica, sans-serif;
      margin: 2%;
 }
- .card p{
+ .card p {
      color: rgb(206, 206, 206);
      font-family: Arial, Helvetica, sans-serif;
      transition: 1s;
@@ -100,13 +105,18 @@
          margin-bottom: 20px;
     }
 }
- .socials{
+ .socials {
      margin: auto;
      text-align: center;
      margin: 5%;
 }
- .socials .social-link{
+ .socials .social-link {
      color: white;
+     text-decoration: none;
+     margin: 1%;
+}
+ .socials .social-link:hover {
+     color: #9500ff;
      text-decoration: none;
      margin: 1%;
 }
