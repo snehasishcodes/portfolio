@@ -4,6 +4,9 @@
      padding: 0;
      box-sizing: border-box;
 }
+::-webkit-scrollbar {
+     display: none;
+}
  body {
      background: linear-gradient(90deg, #151b36, #0f111a);
 }
