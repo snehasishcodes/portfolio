@@ -36,7 +36,10 @@
 .about {
      padding: 15px;
      margin-top: 2%;
-     text-align:center 
+     text-align:center;
+     align: center;
+     align-items: center;
+     justify-content: center;
 }
 .about h4 {
      color: #e6efff;
