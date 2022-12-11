@@ -12,7 +12,7 @@
 }
  .main {
      padding: 15px;
-     margin: 5%;
+     margin-top: 7%;
      text-align:center 
 }
  .main img {
@@ -32,6 +32,29 @@
      margin: 1%;
      text-align:center;
      max-width: 100%;
+}
+.about {
+     padding: 15px;
+     margin-top: 2%;
+     text-align:center 
+}
+.about h4 {
+     color: #e6efff;
+     font-size: 22px;
+     margin-top: 1%;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
+}
+ .about p {
+     overflow: hidden;
+     color: #e3e3e3;
+     font-size: 18px;
+     font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
+     margin: 1%;
+     text-align:center;
+     max-width: 100%;
+}
+.about p a {
+     color: #367EF4;
 }
  .link {
      background: transparent;
