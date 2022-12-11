@@ -55,7 +55,7 @@
      margin: 1%;
      text-align:center;
      max-width: 80%;
-     padding: 10%;
+     padding: auto;
 }
 .about p a {
      color: #367EF4;
