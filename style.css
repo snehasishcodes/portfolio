@@ -52,8 +52,8 @@
      color: #e3e3e3;
      font-size: 18px;
      font-family: -apple-system, BlinkMacSystemFont, sans-serif;;
-     margin: 1%;
-     text-align:center;
+     margin: 1% 5% 1% 5%;
+     text-align:left;
      max-width: 80%;
      padding: auto;
 }
