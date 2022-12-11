@@ -55,6 +55,7 @@
 }
 .about p a {
      color: #367EF4;
+     text-decoration: none;
 }
  .link {
      background: transparent;
