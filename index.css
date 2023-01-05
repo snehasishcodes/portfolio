@@ -50,7 +50,7 @@ main p {
 /* About */
 .about {
     min-height: 100vh;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     background: var(--theme-gradient);
 }
@@ -82,7 +82,7 @@ main p {
 /* Projects */
 .projects {
     min-height: 100vh;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     background: aliceblue;
 }
@@ -109,7 +109,7 @@ main p {
 /* Socials */
 .socials {
     min-height: 100vh;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     background: var(--theme-gradient);
 }
