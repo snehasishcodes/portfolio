@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Variables */
+:root {
+    /* Fonts */
+    --font-kanit: 'Kanit', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
+    /* Colors */
+    --theme: #4859ff;
+    --theme-gradient: linear-gradient(90deg, #4859ff, #1c2369);
+}
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Main */
+main {
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    padding: 14% 10%;
+}
+
+main h2 {
+    font-family: var(--font-kanit);
+    font-size: 60px;
+    color: var(--theme);
+    letter-spacing: 2px;
+}
+
+main p {
+    font-family: var(--font-nunito);
+    font-size: 24px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+/* About */
+.about {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background: var(--theme-gradient);
+}
+
+.about .title {
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: var(--font-kanit);
+    font-size: 50px;
+    padding: 3%;
+}
+
+.about .content {
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    width: 80%;
+}
+
+.about .content p {
+    text-align: left;
+    float: left;
+}
+
+/* Projects */
+.projects {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background: aliceblue;
+}
+
+.projects .title {
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: var(--theme);
+    font-family: var(--font-kanit);
+    font-size: 50px;
+    padding: 3%;
+}
+
+.projects .content {
+    margin: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    width: 80%;
+}
+
+/* Socials */
+.socials {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background: var(--theme-gradient);
+}
+
+.socials .title {
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: var(--font-kanit);
+    font-size: 50px;
+    padding: 3%;
+}
+
+.socials .content {
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    width: 80%;
+}
+
+/* Buttons and Links */
+.btn {
+    background: none;
+    cursor: pointer;
+    border: 2px solid var(--theme);
+    border-radius: 8px;
+    color: var(--theme);
+    font-size: 20px;
+    padding: 6px 16px;
+    margin: 2% 0;
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    font-family: var(--font-nunito);
+}
+
+.btn:hover {
+    background: var(--theme);
+    color: white;
+
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    opacity: 0.8;
+}
+
+.link:hover {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Animations */
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.fade-up {
+    animation-name: fadeUp;
+    animation-duration: 2s;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Cards */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.row {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--theme);
+    padding: 10px;
+    text-align: center;
+    background: var(--theme);
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.card .img {
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    display: block;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+}
+
+.card .heading {
+    font-family: var(--font-kanit);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2px 4px;
+}
+
+.card .body {
+    font-family: var(--font-nunito);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 2px 4px;
+}
+
+.card .button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+.card .button:hover {
+    background-color: white;
+    color: var(--theme);
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
