@@ -155,6 +155,27 @@ main p {
 
 }
 
+.btn-light {
+    background: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    padding: 6px 16px;
+    margin: 2% 0;
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    font-family: var(--font-nunito);
+}
+
+.btn-light:hover {
+    background: white;
+    color: var(--theme);
+
+}
+
 .link {
     color: inherit;
     text-decoration: none;
@@ -269,4 +290,21 @@ main p {
         display: block;
         margin-bottom: 20px;
     }
+}
+
+/* Footer */
+
+.footer .title {
+    color: var(--theme);
+    font-family: var(--font-kanit);
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer .subtitle {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--font-nunito);
+    padding-bottom: 20px;
 }
